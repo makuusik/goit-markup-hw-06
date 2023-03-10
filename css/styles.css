@@ -844,8 +844,8 @@ img {
 
 .modal-form {
   padding-top: 72px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .form-list {
@@ -866,12 +866,11 @@ img {
 }
 
 .modal-list .item {
-  display: flex;
-  flex-direction: column;
   margin: 0;
 }
 
 .modal-form-title {
+  display: block;
   margin-bottom: 4px;
   padding: 0;
   font-weight: 400;
@@ -885,24 +884,38 @@ img {
   margin-bottom: 0;
 }
 
-.item:not(:last-child) .modal-placeholder {
-  margin-bottom: 8px;
-}
-
 .modal-placeholder {
-  padding: 0;
+  padding: 11px 38px 11px 38px;
+  margin-bottom: 8px;
+  position: relative;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 360px;
   height: 40px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: var(--black-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-placeholder:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.modal-placeholder:focus + .modal-placeholder-icon {
+  fill: var(--accent-color);
 }
 
 .modal-textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
-  /* identical to box height, or 117% */
+  line-height: 1.17;
 
   letter-spacing: 0.04em;
 
@@ -919,4 +932,58 @@ img {
   height: 138px;
   resize: none;
   margin-top: 4px;
+}
+
+.modal-textarea:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.modal .modal-submit {
+  width: 169px;
+  height: 56px;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-family: "Roboto";
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  letter-spacing: 0.04em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-submit:focus,
+.modal-submit:hover {
+  background-color: var(--sec-header-button);
+}
+
+.modal-placeholder-icon {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 24px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-span {
+  position: relative;
 }
