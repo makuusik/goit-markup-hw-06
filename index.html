@@ -332,44 +332,71 @@
             <h2 class="form-title">
               Leave your contacts and we will call you back
             </h2>
-            <p class="item">
-              <label for="name" class="modal-form-title">Name</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="modal-placeholder"
-              />
-            </p>
-            <p class="item">
-              <label for="tel" class="modal-form-title">Phone</label>
-              <input
-                type="text"
-                name="tel"
-                id="tel"
-                class="modal-placeholder"
-              />
-            </p>
-            <p class="item">
-              <label for="name" class="modal-form-title">Email</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="modal-placeholder"
-              />
-            </p>
-            <p class="item">
-              <label class="modal-form-title">
-                Comment
-                <textarea
-                  class="modal-textarea"
-                  name="text"
-                  rows="10"
-                  placeholder="Text Input"
-                ></textarea>
-              </label>
-            </p>
+            <form class="modal-form-container">
+              <p class="item">
+                <label class="modal-form-title">Name</label>
+                <span class="modal-form-span">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="modal-placeholder"
+                    required
+                  />
+                  <svg class="modal-placeholder-icon">
+                    <use
+                      href="./images/symbol-defs(bigsize).svg#icon-person"
+                    ></use>
+                  </svg>
+                </span>
+              </p>
+              <p class="item">
+                <label class="modal-form-title">Phone</label>
+                <span class="modal-form-span">
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    class="modal-placeholder"
+                    required
+                  />
+                  <svg class="modal-placeholder-icon">
+                    <use
+                      href="./images/symbol-defs(bigsize).svg#icon-phone"
+                    ></use>
+                  </svg>
+                </span>
+              </p>
+              <p class="item">
+                <label class="modal-form-title">Email</label>
+                <span class="modal-form-span">
+                  <input
+                    type="email"
+                    name="mail"
+                    id="mail"
+                    class="modal-placeholder"
+                    required
+                  />
+                  <svg class="modal-placeholder-icon">
+                    <use
+                      href="./images/symbol-defs(bigsize).svg#icon-email"
+                    ></use>
+                  </svg>
+                </span>
+              </p>
+              <p class="item">
+                <label class="modal-form-title">
+                  Comment
+                  <textarea
+                    class="modal-textarea"
+                    name="text"
+                    rows="10"
+                    placeholder="Text Input"
+                  ></textarea>
+                </label>
+              </p>
+              <button type="submit" class="modal-submit">Send</button>
+            </form>
           </div>
         </div>
       </div>
@@ -431,7 +458,7 @@
                   name="mail"
                   placeholder="E-mail"
                   id="mail"
-                  autofocus
+                  required
                 />
               </div>
               <div class="footer-sub-btn">
