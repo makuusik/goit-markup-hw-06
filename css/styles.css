@@ -12,6 +12,7 @@
   --sec-header-button: #404bbf;
   --social-color: #31d0aa;
   --modal-color: #fcfcfc;
+  --cechbox-text-color: #757575;
 }
 
 body {
@@ -992,4 +993,37 @@ img {
 
 .modal-form-span {
   position: relative;
+}
+
+.checkbox-text {
+  margin: 0;
+  padding: 0;
+  margin-left: 8px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--cechbox-text-color);
+  text-decoration: none;
+}
+
+.checkbox-text > span {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.modal-checkbox {
+  margin-top: 16px;
+  display: flex;
+}
+
+.modal-title-checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-ico {
+  width: 16px;
+  height: 16px;
 }
