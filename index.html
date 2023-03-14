@@ -324,49 +324,43 @@
             </h2>
             <form class="modal-form-container">
               <p class="item">
-                <label class="modal-form-title">Name</label>
-                <span class="modal-form-span">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    class="modal-placeholder"
-                    required
-                  />
-                  <svg class="modal-placeholder-icon">
-                    <use href="./images/icons.svg#icon-person"></use>
-                  </svg>
-                </span>
+                <label class="modal-form-title" for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="modal-placeholder"
+                  required
+                />
+                <svg class="modal-placeholder-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
               </p>
               <p class="item">
-                <label class="modal-form-title">Phone</label>
-                <span class="modal-form-span">
-                  <input
-                    type="tel"
-                    name="tel"
-                    id="tel"
-                    class="modal-placeholder"
-                    required
-                  />
-                  <svg class="modal-placeholder-icon">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
-                </span>
+                <label class="modal-form-title" for="tel">Phone</label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  class="modal-placeholder"
+                  required
+                />
+                <svg class="modal-placeholder-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
               </p>
               <p class="item">
-                <label class="modal-form-title">Email</label>
-                <span class="modal-form-span">
-                  <input
-                    type="email"
-                    name="mail"
-                    id="mail"
-                    class="modal-placeholder"
-                    required
-                  />
-                  <svg class="modal-placeholder-icon">
-                    <use href="./images/icons.svg#icon-email"></use>
-                  </svg>
-                </span>
+                <label class="modal-form-title" for="mail">Email</label>
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  class="modal-placeholder"
+                  required
+                />
+                <svg class="modal-placeholder-icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
               </p>
               <p class="item">
                 <label class="modal-form-title">
@@ -380,23 +374,21 @@
                 </label>
               </p>
 
-              <label for="confirm">
-                <span class="modal-checkbox">
-                  <input
-                    class="modal-title-checkbox"
-                    type="checkbox"
-                    name="checkbox"
-                    id="confirm"
-                    class="checkboxik"
-                  />
-                  <!-- <svg class="checkbox-ico" viewBox="0 0 20 20">
-                    <use href="./images/icons.svg#icon-confirm"></use>
-                  </svg> -->
-                  <p class="checkbox-text">
-                    I accept the terms and conditions of the
-                    <span>Privacy Policy</span>
-                  </p>
-                </span>
+              <label for="confirm" class="confirm">
+                <input
+                  class="modal-checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  id="confirm"
+                  required
+                />
+                <svg class="confirm-ico">
+                  <use href="./images/icons.svg#icon-confirm"></use>
+                </svg>
+                <p class="checkbox-text">
+                  I accept the terms and conditions of the
+                  <span>Privacy Policy</span>
+                </p>
               </label>
               <button type="submit" class="modal-submit">Send</button>
             </form>
@@ -444,7 +436,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="subscribe-container">
           <div class="footer-subs">
             <form class="form footer-form">
               <div class="form-field">
